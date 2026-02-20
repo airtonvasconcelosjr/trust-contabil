@@ -27,7 +27,7 @@ export default function Footer() {
                                 <div className="font-heading font-bold text-white text-lg leading-none">Trust</div>
                                 <div className="text-trust-accent text-xs font-medium leading-none">Contábil</div>
                             </div> */}
-                            <img src={logo} alt="Logo" className="w-50" />
+                            <img src={logo} alt="Trust Contábil - Gestão Contábil Moderna" className="w-50" />
                         </div>
                         <p className="text-white/40 text-sm leading-relaxed max-w-xs">
                             Especialistas em contabilidade em Brasília-DF. Cuidamos da sua empresa para você focar no que importa.
