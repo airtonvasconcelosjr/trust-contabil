@@ -62,31 +62,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Links */}
-                    <div>
-                        <h4 className="font-heading font-bold text-white text-sm mb-4 uppercase tracking-wider">
-                            Navegação
-                        </h4>
-                        <ul className="space-y-3">
-                            {[
-                                { label: 'Início', id: 'inicio' },
-                                { label: 'Sobre nós', id: 'sobre' },
-                                { label: 'Serviços', id: 'servicos' },
-                                { label: 'Vantagens', id: 'vantagens' },
-                                { label: 'Contato', id: 'contato' },
-                            ].map((link) => (
-                                <li key={link.id}>
-                                    <button
-                                        onClick={() => scrollTo(link.id)}
-                                        className="text-white/40 hover:text-trust-accent text-sm transition-colors duration-200"
-                                    >
-                                        {link.label}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
+                  
                     {/* Contact info */}
                     <div>
                         <h4 className="font-heading font-bold text-white text-sm mb-4 uppercase tracking-wider">
@@ -130,6 +106,31 @@ export default function Footer() {
                                 Fale com um Especialista
                             </motion.a>
                         </div>
+                    </div>
+
+                    {/* Links */}
+                    <div>
+                        <h4 className="font-heading font-bold text-white text-sm mb-4 uppercase tracking-wider">
+                            Navegação
+                        </h4>
+                       <ul className="flex flex-wrap gap-x-6 gap-y-3 md:block md:space-y-3 md:gap-0">
+                            {[
+                                { label: 'Início', id: 'inicio' },
+                                { label: 'Sobre nós', id: 'sobre' },
+                                { label: 'Serviços', id: 'servicos' },
+                                { label: 'Vantagens', id: 'vantagens' },
+                                { label: 'Contato', id: 'contato' },
+                            ].map((link) => (
+                                <li key={link.id}>
+                                    <button
+                                        onClick={() => scrollTo(link.id)}
+                                        className="text-white/40 hover:text-trust-accent text-sm transition-colors duration-200"
+                                    >
+                                        {link.label}
+                                    </button>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
 

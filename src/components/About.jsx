@@ -64,7 +64,7 @@ export default function About() {
                 </FadeUp>
 
                 {/* Main content */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24 text-center lg:text-left justify-items-center lg:justify-items-start">
                     <FadeLeft>
                         <div>
                             <p className="text-white/70 text-lg leading-relaxed mb-6">
@@ -78,7 +78,7 @@ export default function About() {
                                 na busca de um crescente padrão de excelência.
                             </p>
 
-                            <div className="flex flex-wrap gap-4">
+                            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                                 <a
                                     href="https://wa.me/5561998501881"
                                     target="_blank"
@@ -117,14 +117,14 @@ export default function About() {
                 </div>
 
                 {/* Values grid */}
-                <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 bg">
                     {values.map((v, i) => {
                         const Icon = v.icon;
                         return (
                             <StaggerChild key={i}>
                                 <motion.div
                                     whileHover={{ y: -6 }}
-                                    className="glass rounded-2xl p-6 group min-h-[250px]"
+                                   className="glass rounded-2xl p-6 group sm:min-h-[250px] text-center md:text-left flex flex-col items-center md:items-start"
                                 >
                                     <div className="w-12 h-12 rounded-xl bg-trust-accent/10 flex items-center justify-center mb-4 group-hover:bg-trust-accent/20 transition-colors duration-300">
                                         <Icon className="w-6 h-6 text-trust-accent" />
